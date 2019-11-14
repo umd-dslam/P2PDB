@@ -6,8 +6,10 @@ Peer-to-Peer Database (P2PDB) is a secure, scalable, decentralized data sharing 
 
 ## Contribution
 
-We strictly follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for adding human and machine readable meaning to commit messages.
+We strictly follow the below stype guides for adding human and machine readable meaning to source code and commit messages.
 
+- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+- [Google Style Guides](http://google.github.io/styleguide/)
 
 ## Feedback
 
