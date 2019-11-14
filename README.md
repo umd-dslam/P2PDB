@@ -1,5 +1,7 @@
 # P2PDB
 
+> A Secure, Scalable, Decentralized Data Sharing and Management Platform
+
 
 # References
 
