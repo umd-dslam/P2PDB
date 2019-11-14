@@ -7,3 +7,6 @@
 [submodule "p2pdb-blockchain"]
 	path = p2pdb-blockchain
 	url = https://github.com/DSLAM-UMD/p2pdb-blockchain
+[submodule "p2pdb-explorer"]
+	path = p2pdb-explorer
+	url = https://github.com/DSLAM-UMD/p2pdb-explorer
