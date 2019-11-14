@@ -1,6 +1,6 @@
 [submodule "go-contractor"]
-	path = go-contractor
+	path = p2pdb-contractor
 	url = https://github.com/DSLAM-UMD/go-contractor
 [submodule "go-coordinator"]
-	path = go-coordinator
+	path = p2pdb-coordinator
 	url = https://github.com/DSLAM-UMD/go-coordinator
