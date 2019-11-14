@@ -1,8 +1,10 @@
 # P2PDB
 
+[![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](LICENSE)
+
 Peer-to-Peer Database (P2PDB) is a secure, scalable, decentralized data sharing and management platform for data publishing, sharing, and querying of data which enables an unlimited number of independent participants to publish and access the contents of datasets stored across the participants.
 
-## Contributions
+## Contribution
 
 We strictly follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for adding human and machine readable meaning to commit messages.
 
