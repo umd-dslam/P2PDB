@@ -1,0 +1,3 @@
+[submodule "go-contractor"]
+	path = go-contractor
+	url = https://github.com/DSLAM-UMD/go-contractor
