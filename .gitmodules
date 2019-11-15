@@ -1,12 +1,15 @@
 [submodule "go-contractor"]
 	path = p2pdb-contractor
 	url = https://github.com/DSLAM-UMD/go-contractor
+	branch = develop
 [submodule "go-coordinator"]
 	path = p2pdb-coordinator
 	url = https://github.com/DSLAM-UMD/go-coordinator
+	branch = develop
 [submodule "p2pdb-blockchain"]
 	path = p2pdb-blockchain
 	url = https://github.com/DSLAM-UMD/p2pdb-blockchain
+	branch = develop
 [submodule "p2pdb-explorer"]
 	path = p2pdb-explorer
 	url = https://github.com/DSLAM-UMD/p2pdb-explorer
