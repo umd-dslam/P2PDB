@@ -10,7 +10,7 @@ P2PDB consists of five core components:
 - **Publisher**: Produce and ship its structure data to contractors for storage and queryable access, and receive a reward every time the data that they contributed participates in a query result.
 - **Client**: Produce static or continuous SQL queries and consume the results.
 - **Coordinator**: Receive SQL queries, parse, plan, optimize  and coordinate their parallel execution across potentially many contractors.
-- **Contractor**: provide an interface to locally stored data for queries sent from coordinators.
+- **Contractor**: Provide an interface to locally stored data for queries sent from coordinators.
 - **Blockchain**: Maintain the configuration and bookkeeping info of the global state of sytem.    
 
 ## Contribution
