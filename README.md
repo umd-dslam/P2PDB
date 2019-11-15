@@ -27,7 +27,7 @@ Your feedback is our motivation to move on. Please let us know your questions, c
 
 ## Publication
 
-- AnyLog: a Grand Unification of the Internet of Things. **Daniel Abadi**, Owen Arden, Faisal Nawab and Moshe Shadmon. [CIDR'2020](http://cidrdb.org/cidr2020/program.html)
+[1] AnyLog: a Grand Unification of the Internet of Things. **Daniel Abadi**, Owen Arden, Faisal Nawab and Moshe Shadmon. [CIDR'2020](http://cidrdb.org/cidr2020/program.html)
 
 ## License
 
