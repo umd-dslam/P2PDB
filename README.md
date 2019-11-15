@@ -20,7 +20,7 @@ P2PDB consists of five core components: Client, Publisher, Coordinator, Contract
 
 ## Contribution
 
-We strictly follow the below stype guides for adding human and machine readable meaning to source code and commit messages.
+We strictly follow the below style guides for adding human and machine readable meaning to source code and commit messages.
 
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 - [Google Style Guides](http://google.github.io/styleguide/)
