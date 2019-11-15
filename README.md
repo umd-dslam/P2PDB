@@ -11,6 +11,7 @@ We strictly follow the below stype guides for adding human and machine readable 
 
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 - [Google Style Guides](http://google.github.io/styleguide/)
+- [GitFlow](https://datasift.github.io/gitflow/IntroducingGitFlow.html)
 
 ## Feedback
 
