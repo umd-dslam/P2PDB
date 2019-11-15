@@ -5,6 +5,8 @@
 
 Peer-to-Peer Database (P2PDB) is a secure, scalable, decentralized data sharing and management platform for data publishing, sharing, and querying of data which enables an unlimited number of independent participants to publish and access the contents of datasets stored across the participants.
 
+P2PDB consists of five core components:
+
 - **Publisher**: Produce and ship its structure data to contractors for storage and queryable access, and receive a reward every time the data that they contributed participates in a query result.
 - **Client**: Produce static or continuous SQL queries and consume the results.
 - **Coordinator**: Receive SQL queries, parse, plan, optimize  and coordinate their parallel execution across potentially many contractors.
