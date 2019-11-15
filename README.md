@@ -11,7 +11,7 @@ P2PDB consists of five core components:
 - **Client**: Produce static or continuous SQL queries and consume the results.
 - **Coordinator**: Receive SQL queries, parse, plan, optimize  and coordinate their parallel execution across potentially many contractors.
 - **Contractor**: Provide an interface to locally stored data for queries sent from coordinators.
-- **Blockchain**: Maintain the configuration and bookkeeping info of the global state of sytem.    
+- **Blockchain**: Maintain the configuration and bookkeeping info of the global state of system.    
 
 ## Contribution
 
