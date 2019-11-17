@@ -7,15 +7,15 @@ Peer-to-Peer Database (P2PDB) is a secure, scalable, decentralized data sharing 
 
 P2PDB consists of five core components: Client, Publisher, Coordinator, Contractor and Blockchain.
 
-- [client](/client)
+- [Client](/client)
     - Produce static or continuous SQL queries and consume the results.
-- [publisher](/publisher)
+- [Publisher](/publisher)
     - Produce and ship its structure data to contractors for storage and queryable access, and receive a reward every time the data that they contributed participates in a query result.
-- [p2pdb-coordinator](https://github.com/DSLAM-UMD/p2pdb-coordinator)
+- [Coordinator](/coordinator)
     - Receive SQL queries, parse, plan, optimize  and coordinate their parallel execution across potentially many contractors.
-- [p2pdb-contractor](https://github.com/DSLAM-UMD/p2pdb-contractor)
+- [Contractor](/contractor)
     - Provide an interface to locally stored data for queries sent from coordinators.
-- [p2pdb-blockchain](https://github.com/DSLAM-UMD/p2pdb-blockchain)
+- [Blockchain](/blockchain)
     - Maintain the configuration and bookkeeping info of the global state of system.    
 
 ## Contribution
