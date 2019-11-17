@@ -1,6 +1,6 @@
 # P2PDB
 
-[![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](LICENSE) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](LICENSE) [![Go Report Card](https://goreportcard.com/badge/github.com/DSLAM-UMD/P2PDB)](https://goreportcard.com/report/github.com/DSLAM-UMD/P2PDB) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
 
 Peer-to-Peer Database (P2PDB) is a secure, scalable, decentralized data sharing and management platform for data publishing, sharing, and querying of data which enables an unlimited number of independent participants to publish and access the contents of datasets stored across the participants.
