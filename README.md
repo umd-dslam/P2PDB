@@ -16,7 +16,7 @@ P2PDB consists of five core components: Client, Publisher, Coordinator, Contract
 - [Contractor](/contractor)
     - Provide an interface to locally stored data for queries sent from coordinators.
 - [Blockchain](/blockchain)
-    - Maintain the configuration and bookkeeping info of the global state of system.    
+    - Maintain the configuration and bookkeeping info of the global state of system.
 
 ## Contribution
 

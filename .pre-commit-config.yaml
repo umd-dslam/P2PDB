@@ -1,19 +1,48 @@
-- repo: git://github.com/dnephin/pre-commit-golang
-  rev: v0.3.3
-  hooks:
-    - id: go-fmt
-    - id: go-lint
-    - id: validate-toml
-    - id: no-go-testing
-- repo: https://github.com/wangkuiyi/google-style-precommit-hook
-  rev: v0.1.1
-  hooks:
-    - id: google-style-java
-      pass_filenames: false # https://github.com/sql-machine-learning/sqlflow/issues/1152#issuecomment-551325589 
-- repo: local
-  hooks:
-    - id: copyright_checker
-      name: copyright_checker
-      entry: python ./scripts/copyright.py
+---
+repos:
+  - repo: 'https://github.com/pre-commit/pre-commit-hooks.git'
+    rev: v2.4.0
+    hooks:
+      - id: trailing-whitespace
+        args: ["--markdown-linebreak-ext=md"]
+      - id: debug-statements
+      - id: fix-encoding-pragma
+      - id: end-of-file-fixer
+      - id: detect-aws-credentials
+      - id: detect-private-key
+      - id: check-yaml
+      - id: check-json
+      - id: pretty-format-json
+        args:
+          - --autofix
+      - id: check-symlinks
+      - id: check-case-conflict
+      - id: check-merge-conflict
+  - repo: https://github.com/jumanjihouse/pre-commit-hooks
+    rev: 1.11.0
+    hooks:
+      - id: shellcheck
+  - repo: git://github.com/dnephin/pre-commit-golang
+    rev: v0.3.5
+    hooks:
+      - id: go-fmt
+      - id: go-lint
+      - id: validate-toml
+      - id: no-go-testing
+  - repo: https://github.com/wangkuiyi/google-style-precommit-hook
+    rev: v0.1.1
+    hooks:
+      - id: google-style-java
+        pass_filenames: false  # https://github.com/sql-machine-learning/sqlflow/issues/1152#issuecomment-551325589
+  - repo: git://github.com/pre-commit/mirrors-yapf
+    sha: v0.19.0
+    hooks:
+    - id: yapf
       language: system
-      files: \.(go|py|sh|java)$
+  - repo: local
+    hooks:
+      - id: copyright_checker
+        name: copyright_checker
+        entry: python ./scripts/copyright.py
+        language: system
+        files: \.(go|py|sh|java)$
