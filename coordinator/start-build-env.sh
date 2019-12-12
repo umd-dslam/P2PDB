@@ -129,7 +129,7 @@ ENV MAVEN_VERSION 3.6.3
 # Clone Presto Source Code
 ########################################
 
-RUN git clone https://github.com/DSLAM-UMD/presto /home/${USER_NAME}/coordinator/
+RUN git clone https://github.com/DSLAM-UMD/presto /home/${USER_NAME}/coordinator/presto
 UserSpecificDocker
 
 cat <<EOF
