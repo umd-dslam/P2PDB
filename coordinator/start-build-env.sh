@@ -26,6 +26,41 @@ $(cmd) [OPTIONS...]
 }
 
 USER_NAME=${SUDO_USER:=$USER}
+USER_ID=$(id -u "${USER_NAME}")
+
+if [ "$(uname -s)" = "Darwin" ]; then
+  GROUP_ID=100
+fi
+
+if [ "$(uname -s)" = "Linux" ]; then
+  GROUP_ID=$(id -g "${USER_NAME}")
+  # man docker-run
+  # When using SELinux, mounted directories may not be accessible
+  # to the container. To work around this, with Docker prior to 1.7
+  # one needs to run the "chcon -Rt svirt_sandbox_file_t" command on
+  # the directories. With Docker 1.7 and later the z mount option
+  # does this automatically.
+  if command -v selinuxenabled >/dev/null && selinuxenabled; then
+    DCKR_VER=$(docker -v|
+    awk '$1 == "Docker" && $2 == "version" {split($3,ver,".");print ver[1]"."ver[2]}')
+    DCKR_MAJ=${DCKR_VER%.*}
+    DCKR_MIN=${DCKR_VER#*.}
+    if [ "${DCKR_MAJ}" -eq 1 ] && [ "${DCKR_MIN}" -ge 7 ] ||
+        [ "${DCKR_MAJ}" -gt 1 ]; then
+      V_OPTS=:z
+    else
+      for d in "${PWD}" "${HOME}/.m2"; do
+        ctx=$(stat --printf='%C' "$d"|cut -d':' -f3)
+        if [ "$ctx" != svirt_sandbox_file_t ] && [ "$ctx" != container_file_t ]; then
+          printf 'INFO: SELinux is enabled.\n'
+          printf '\tMounted %s may not be accessible to the container.\n' "$d"
+          printf 'INFO: If so, on the host, run the following command:\n'
+          printf '\t# chcon -Rt svirt_sandbox_file_t %s\n' "$d"
+        fi
+      done
+    fi
+  fi
+fi
 
 # shellcheck disable=SC2034
 options=$(getopt -o r:c:v:i --long rpm:,cli:,version:,incremental -n 'parse-options' -- "$@")
@@ -66,6 +101,11 @@ docker build -t "${IMAGE_NAME}" - <<UserSpecificDocker
 FROM centos:7.5.1804
 LABEL maintainer="gangliao@cs.umd.edu"
 
+RUN groupadd --non-unique -g ${GROUP_ID} ${USER_NAME}
+RUN useradd -g ${GROUP_ID} -u ${USER_ID} -k /root -m ${USER_NAME}
+RUN echo "${USER_NAME} ALL=NOPASSWD: ALL" >> /etc/sudoers
+ENV HOME /home/${USER_NAME}
+
 RUN yum update -y && \
     yum -y install java-11-openjdk java-11-openjdk-devel less vim wget curl git && \
     yum clean all && \
@@ -99,15 +139,11 @@ cat <<EOF
 
 EOF
 
-#If this env varible is empty, docker will be started
-# in non interactive mode
-DOCKER_INTERACTIVE_RUN=${DOCKER_INTERACTIVE_RUN-"-i -t"}
-
 # By mapping the .m2 directory you can do an mvn install from
 # within the container and use the result on your normal
 # system.  And this also is a significant speedup in subsequent
 # builds because the dependencies are downloaded only once.
-docker run --rm=true "${DOCKER_INTERACTIVE_RUN}" \
+docker run --rm=true -it \
   -d --net=host \
   -v "${PWD}:/home/${USER_NAME}/host${V_OPTS:-}" \
   -w "/home/${USER_NAME}" \
