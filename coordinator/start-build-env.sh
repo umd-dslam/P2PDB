@@ -20,10 +20,12 @@ function cmd()
 function usage()
 {
   echo "\
-cmd [OPTIONS...]
+$(cmd) [OPTIONS...]
 -v, --version; Set presto version
 " | column -t -s ";"
 }
+
+USER_NAME=${SUDO_USER:=$USER}
 
 # shellcheck disable=SC2034
 options=$(getopt -o r:c:v:i --long rpm:,cli:,version:,incremental -n 'parse-options' -- "$@")
@@ -36,7 +38,7 @@ fi
 
 while true; do
   case "$1" in
-    -v | --version ) PRESTO_VERSION=$2; shift ;;
+    -v | --version ) PRESTO_VERSION=$2; shift 2;;
     -- ) shift; break ;;
     "" ) break ;;
     * ) echo "Unknown option provided ${1}"; usage; exit 1; ;;
