@@ -107,7 +107,7 @@ RUN echo "${USER_NAME} ALL=NOPASSWD: ALL" >> /etc/sudoers
 ENV HOME /home/${USER_NAME}
 
 RUN yum update -y && \
-    yum -y install java-11-openjdk java-11-openjdk-devel less vim wget curl git && \
+    yum -y install java-1.8.0-openjdk java-1.8.0-openjdk-devel sudo less vim wget curl git && \
     yum clean all && \
     rm -rf /var/cache/yum && \
     echo OK
