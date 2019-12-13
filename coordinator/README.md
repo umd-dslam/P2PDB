@@ -70,16 +70,16 @@ $ presto-cli --server localhost:8080 --catalog timescaledb --schema default
 
 presto:default> SHOW SCHEMAS FROM timescaledb;
 
-         Schema          
+         Schema  
 -------------------------
- _timescaledb_cache      
- _timescaledb_catalog    
- _timescaledb_config     
- _timescaledb_internal   
- information_schema      
- pg_catalog              
- public                  
- timescaledb_information 
+ _timescaledb_cache  
+ _timescaledb_catalog  
+ _timescaledb_config  
+ _timescaledb_internal  
+ information_schema  
+ pg_catalog  
+ public  
+ timescaledb_information
 (8 rows)
 
 Query 20191213_051353_00004_mg8s8, FINISHED, 1 node
@@ -90,14 +90,14 @@ Splits: 19 total, 19 done (100.00%)
 presto:default> SHOW TABLES FROM timescaledb.public;
  Table  
 --------
- table1 
+ table1
 (1 row)
 
 
 presto:default> SELECT * FROM timescaledb.public.table1;
- id | field1 
+ id | field1
 ----+--------
- a  | aaaa   
+ a  | aaaa  
 (1 row)
 
 Query 20191213_051627_00011_mg8s8, FINISHED, 1 node
