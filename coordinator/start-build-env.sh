@@ -45,6 +45,7 @@ if [ "$(uname -s)" = "Linux" ]; then
     awk '$1 == "Docker" && $2 == "version" {split($3,ver,".");print ver[1]"."ver[2]}')
     DCKR_MAJ=${DCKR_VER%.*}
     DCKR_MIN=${DCKR_VER#*.}
+    # shellcheck disable=SC2015
     if [ "${DCKR_MAJ}" -eq 1 ] && [ "${DCKR_MIN}" -ge 7 ] ||
         [ "${DCKR_MAJ}" -gt 1 ]; then
       V_OPTS=:z

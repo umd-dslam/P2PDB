@@ -89,3 +89,4 @@ nb-configuration.xml
 *.out
 tex
 google-java-format-*
+.vscode
