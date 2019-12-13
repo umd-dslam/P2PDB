@@ -14,7 +14,7 @@ import unittest
 import prestodb
 
 
-class TestCoordinatorMethods(unittest.TestCase):
+class TestCoordinator(unittest.TestCase):
     def test_upper(self):
         conn = prestodb.dbapi.connect(
             host='localhost',
