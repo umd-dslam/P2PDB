@@ -11,7 +11,7 @@ $ bash start-build-env.sh  -v 0.229
 $ docker exec -it p2pdb-coordinator-dev bash
 
 # Enter the coordinator's container
-[user@linuxkit-025000000001 ~]$ ls
+[gangl@linuxkit-025000000001 ~]$ ls
 anaconda-ks.cfg  coordinator  host
 
 # List presto source code
@@ -30,5 +30,7 @@ presto-memory              src
 2. Compile Source Code
 
 ```bash
-./mvnw clean install -DskipTests
+sudo chmod -R 777  coordinator/presto
+cd coordinator/presto/
+./mvnw clean install -DskipTests -Dcheckstyle.skip
 ```
