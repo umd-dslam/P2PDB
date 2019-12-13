@@ -30,15 +30,77 @@ presto-memory              src
 2. Compile Source Code
 
 ```bash
-sudo chmod -R 777  coordinator/presto
-cd coordinator/presto/
-./mvnw clean install -DskipTests -Dcheckstyle.skip
+$ sudo chmod -R 777  coordinator/presto
+$ sudo chmod -R 777  /var/presto
+$ cd coordinator/presto/
+$ ./mvnw clean install -DskipTests -Dcheckstyle.skip
 ```
 
-3. Command Line Interface
+3. Run Presto
+
+The installation directory contains the launcher script in `bin/launcher`. Presto can be started as a daemon by running the following:
 
 ```bash
-sudo cp -a $HOME/coordinator/presto/presto-cli/target/presto-cli-0.231-SNAPSHOT-executable.jar /usr/local/bin/presto-cli
-sudo chmod -v +x /usr/local/bin/presto-cli
-sudo mkdir -p /usr/lib/presto/etc && sudo cp -r $HOME/host/presto/etc /usr/lib/presto/
+$ export PRESTO_HOME=$HOME/coordinator/presto/presto-server-rpm/target/classes/presto-server-0.231-SNAPSHOT
+
+$ cd $PRESTO_HOME
+$ bin/launcher start
+
+Started as 3397
+
+$ jps
+
+3397 PrestoServer
+```
+
+4. Command Line Interface
+
+```bash
+# Setup Presto cli
+$ sudo cp -a $HOME/coordinator/presto/presto-cli/target/presto-cli-0.231-SNAPSHOT-executable.jar /usr/local/bin/presto-cli
+$ sudo chmod -v +x /usr/local/bin/presto-cli
+$ sudo cp -r $HOME/host/presto/etc $HOME/coordinator/presto/presto-server-rpm/target/classes/presto-server-0.231-SNAPSHOT/
+```
+
+5. Connect to TimescaleDB
+
+```bash
+# Start Presto server
+$ presto-cli --server localhost:8080 --catalog timescaledb --schema default
+
+presto:default> SHOW SCHEMAS FROM timescaledb;
+
+         Schema          
+-------------------------
+ _timescaledb_cache      
+ _timescaledb_catalog    
+ _timescaledb_config     
+ _timescaledb_internal   
+ information_schema      
+ pg_catalog              
+ public                  
+ timescaledb_information 
+(8 rows)
+
+Query 20191213_051353_00004_mg8s8, FINISHED, 1 node
+Splits: 19 total, 19 done (100.00%)
+0:00 [8 rows, 175B] [28 rows/s, 614B/s]
+
+
+presto:default> SHOW TABLES FROM timescaledb.public;
+ Table  
+--------
+ table1 
+(1 row)
+
+
+presto:default> SELECT * FROM timescaledb.public.table1;
+ id | field1 
+----+--------
+ a  | aaaa   
+(1 row)
+
+Query 20191213_051627_00011_mg8s8, FINISHED, 1 node
+Splits: 17 total, 17 done (100.00%)
+0:00 [1 rows, 0B] [4 rows/s, 0B/s]
 ```
