@@ -8,7 +8,6 @@ repos:
       - id: debug-statements
       - id: fix-encoding-pragma
       - id: end-of-file-fixer
-      - id: detect-aws-credentials
       - id: detect-private-key
       - id: check-yaml
       - id: check-json
