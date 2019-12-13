@@ -34,3 +34,11 @@ sudo chmod -R 777  coordinator/presto
 cd coordinator/presto/
 ./mvnw clean install -DskipTests -Dcheckstyle.skip
 ```
+
+3. Command Line Interface
+
+```bash
+sudo cp -a $HOME/coordinator/presto/presto-cli/target/presto-cli-0.231-SNAPSHOT-executable.jar /usr/local/bin/presto-cli
+sudo chmod -v +x /usr/local/bin/presto-cli
+sudo mkdir -p /usr/lib/presto/etc && sudo cp -r $HOME/host/presto/etc /usr/lib/presto/
+```
