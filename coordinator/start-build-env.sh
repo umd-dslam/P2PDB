@@ -124,6 +124,7 @@ ENV JAVA_HOME     /usr/lib/jvm/java
 ENV M2_HOME       /usr/share/maven
 ENV MAVEN_HOME    /usr/share/maven
 ENV MAVEN_VERSION 3.6.3
+ENV PRESTO_HOME   /home/${USER_NAME}/coordinator/presto/presto-server-rpm/target/classes/presto-server-0.231-SNAPSHOT
 
 ########################################
 # Clone Presto Source Code
