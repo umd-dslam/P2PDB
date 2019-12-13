@@ -27,7 +27,7 @@ repos:
       - id: go-fmt
       - id: go-lint
       - id: validate-toml
-      - id: no-go-testing
+      # - id: no-go-testing
   - repo: https://github.com/wangkuiyi/google-style-precommit-hook
     rev: v0.1.1
     hooks:
