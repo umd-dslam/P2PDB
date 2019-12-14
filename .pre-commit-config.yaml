@@ -34,7 +34,7 @@ repos:
       - id: google-style-java
         pass_filenames: false  # https://github.com/sql-machine-learning/sqlflow/issues/1152#issuecomment-551325589
   - repo: git://github.com/pre-commit/mirrors-yapf
-    sha: v0.19.0
+    rev: v0.29.0
     hooks:
     - id: yapf
       language: system
