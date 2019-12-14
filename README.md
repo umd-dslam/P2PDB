@@ -1,6 +1,6 @@
 # P2PDB
 
-[![Build Status](https://travis-ci.org/DSLAM-UMD/P2PDB.svg?branch=develop)](https://travis-ci.org/DSLAM-UMD/P2PDB.svg?branch=develop)
+[![Build Status](https://travis-ci.org/DSLAM-UMD/P2PDB.svg?branch=develop)](https://travis-ci.org/DSLAM-UMD/P2PDB)
 [![Go Report Card](https://goreportcard.com/badge/github.com/DSLAM-UMD/P2PDB)](https://goreportcard.com/report/github.com/DSLAM-UMD/P2PDB) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](LICENSE)
 
