@@ -1,0 +1,45 @@
+dist: trusty
+sudo: required
+
+language: go
+cache:
+  directories:
+  - $HOME/.cache/pip
+  - $HOME/.cache/pre-commit
+
+go:
+  - 1.13.x
+
+addons:
+  apt:
+    packages:
+      - python
+      - python-dev
+      - python-pip
+
+branches:
+  only:
+  - gh-pages
+  - develop
+  - "/release-*/"
+  - "/^v\\d+\\.\\d+(\\.\\d+)?(-\\S*)?$/"
+
+stages:
+  - linting
+
+jobs:
+  include:
+    - stage: linting
+
+      name: "pre-commit"
+
+      before_install:
+
+      install:
+        - pip install pre-commit
+        - go get -u golang.org/x/lint/golint
+
+      script: pre-commit run --all --show-diff-on-failure
+
+      after_success:
+        - export BRANCH=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $TRAVIS_BRANCH; else echo $TRAVIS_PULL_REQUEST_BRANCH; fi)
