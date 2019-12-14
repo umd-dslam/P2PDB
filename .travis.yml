@@ -36,6 +36,7 @@ jobs:
       before_install:
 
       install:
+        - pip install --upgrade pip
         - pip install pre-commit
         - go get -u golang.org/x/lint/golint
 
