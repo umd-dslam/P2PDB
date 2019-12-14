@@ -37,6 +37,7 @@ jobs:
 
       install:
         - sudo pip install --upgrade pip
+        - sudo pip install yapf==v0.29.0
         - sudo pip install pre-commit
         - go get -u golang.org/x/lint/golint
 
