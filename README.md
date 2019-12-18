@@ -52,7 +52,9 @@ This email is accessible by P2PDB's executive team and board members.
 
 ## Publication
 
-[1] AnyLog: a Grand Unification of the Internet of Things. **Daniel Abadi**, Owen Arden, Faisal Nawab and Moshe Shadmon. [CIDR'2020](http://cidrdb.org/cidr2020/program.html)
+[1] [AnyLog: a Grand Unification of the Internet of Things](http://www.cs.umd.edu/~abadi/papers/anylogAbadiEtAl.pdf). Daniel Abadi, Owen Arden, Faisal Nawab and Moshe Shadmon. [CIDR'2020](http://cidrdb.org/cidr2020/program.html)
+
+[2] [It's time to rethink how we share data on the Web](https://dbmsmusings.blogspot.com/2019/12/its-time-to-rethink-how-we-share-data.html). Daniel Abadi. In DBMS Musings. December 18, 2019.
 
 ## License
 
