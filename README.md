@@ -28,9 +28,27 @@ We strictly follow the below style guides for adding human and machine readable 
 - [Google Style Guides](http://google.github.io/styleguide/)
 - [GitFlow](https://datasift.github.io/gitflow/IntroducingGitFlow.html)
 
-## Feedback
+
+### Reach out in Slack
+
+Within the Slack group, you can reach out to us via the `#p2pdb` channel.
+
+For more information on getting the most out of our Slack workspace, see our [Slack welcome page](https://app.slack.com/client/TRK6MGWD7/CRVEFPCS1).
+
+For technical support questions related to Slack, please contact [Slack support](https://slack.com/help).
+
+### Feedback
 
 Your feedback is our motivation to move on. Please let us know your questions, concerns, and issues by [filing Github Issues](https://github.com/DSLAM-UMD/P2PDB/issues).
+
+### Email
+
+Please contact us if you have some IoT data you can contribute our research prototype.
+
+`email: coming@soon`
+
+
+This email is accessible by P2PDB's executive team and board members.
 
 ## Publication
 
