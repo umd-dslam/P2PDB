@@ -1,9 +1,10 @@
 # P2PDB
 
 [![Build Status](https://travis-ci.org/DSLAM-UMD/P2PDB.svg?branch=develop)](https://travis-ci.org/DSLAM-UMD/P2PDB)
+[![Join the chat at https://gitter.im/DSLAM-UMD/P2PDB](https://badges.gitter.im/DSLAM-UMD/P2PDB.svg)](https://gitter.im/DSLAM-UMD/P2PDB?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+<a href="https://cla-assistant.io/DSLAM-UMD/P2PDB"><img src="https://cla-assistant.io/readme/badge/DSLAM-UMD/P2PDB" alt="CLA assistant" /></a>
 [![Go Report Card](https://goreportcard.com/badge/github.com/DSLAM-UMD/P2PDB)](https://goreportcard.com/report/github.com/DSLAM-UMD/P2PDB) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-[![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](LICENSE) [![Join the chat at https://gitter.im/DSLAM-UMD/P2PDB](https://badges.gitter.im/DSLAM-UMD/P2PDB.svg)](https://gitter.im/DSLAM-UMD/P2PDB?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
+[![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](LICENSE)
 
 Peer-to-Peer Database (P2PDB) is a secure, scalable, decentralized data sharing and management platform for data publishing, sharing, and querying of data which enables an unlimited number of independent participants to publish and access the contents of datasets stored across the participants.
 
@@ -48,7 +49,7 @@ This email is accessible by P2PDB's executive team and board members.
 
 ## Publication
 
-[1] [AnyLog: a Grand Unification of the Internet of Things](http://www.cs.umd.edu/~abadi/papers/anylogAbadiEtAl.pdf). Daniel Abadi, Owen Arden, Faisal Nawab and Moshe Shadmon. [CIDR'2020](http://cidrdb.org/cidr2020/program.html)
+[1] [AnyLog: a Grand Unification of the Internet of Things](http://www.cs.umd.edu/~abadi/papers/anylogAbadiEtAl.pdf). Daniel Abadi, Owen Arden, Faisal Nawab and Moshe Shadmon. CIDR'2020
 
 [2] [It's time to rethink how we share data on the Web](https://dbmsmusings.blogspot.com/2019/12/its-time-to-rethink-how-we-share-data.html). Daniel Abadi. In DBMS Musings. December 18, 2019.
 
