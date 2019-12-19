@@ -29,13 +29,9 @@ We strictly follow the below style guides for adding human and machine readable 
 - [GitFlow](https://datasift.github.io/gitflow/IntroducingGitFlow.html)
 
 
-### Reach out in Slack
+### Reach out in Gitter
 
-Within the Slack group, you can reach out to us via the `#p2pdb` channel.
-
-For more information on getting the most out of our Slack workspace, see our [Slack welcome page](https://app.slack.com/client/TRK6MGWD7/CRVEFPCS1).
-
-For technical support questions related to Slack, please contact [Slack support](https://slack.com/help).
+Within the Gitter, you can reach out to us via the [P2PDB](https://gitter.im/DSLAM-UMD) room in our DSLAM-UMD community.
 
 ### Feedback
 
