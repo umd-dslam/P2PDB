@@ -45,3 +45,12 @@ jobs:
 
       after_success:
         - export BRANCH=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $TRAVIS_BRANCH; else echo $TRAVIS_PULL_REQUEST_BRANCH; fi)
+ 
+ notifications:
+   webhooks:
+     urls:
+       - https://webhooks.gitter.im/e/a5ec081b4633c14f66f7
+     on_success: change  # options: [always|never|change] default: always
+     on_failure: always  # options: [always|never|change] default: always
+     on_start: never     # options: [always|never|change] default: always
+
