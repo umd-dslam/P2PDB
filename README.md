@@ -29,12 +29,6 @@ P2PDB consists of five core components: Client, Publisher, Coordinator, Contract
 [2] [AnyLog: a Grand Unification of the Internet of Things](http://www.cs.umd.edu/~abadi/papers/anylogAbadiEtAl.pdf). Daniel Abadi, Owen Arden, Faisal Nawab and Moshe Shadmon. CIDR'2020
 
 
-## Get Help
-
-- [Gitter Channel](https://gitter.im/DSLAM-UMD)
-- [GitHub Issues](https://github.com/DSLAM-UMD/P2PDB/issues)
-
-
 ## Contributing
 
 If you wish to make contributions to this project, please refer to [Contributor Instructions](CONTRIBUTING.md) for more information.
