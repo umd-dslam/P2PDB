@@ -47,7 +47,7 @@ COPYRIGHT_HEADER = COPYRIGHT_HEADER.replace(p, date)
 
 
 def generate_copyright(template, lang='go'):
-    if lang in ['Python', 'shell']:
+    if lang in ['Python', 'shell', 'yaml']:
         LANG_COMMENT_MARK = '#'
     else:
         LANG_COMMENT_MARK = "//"
@@ -77,6 +77,8 @@ def lang_type(filename):
         return "shell"
     elif filename.endswith(".java"):
         return "Java"
+    elif filename.endswith(".yaml"):
+        return "yaml"
     else:
         print("Unsupported filetype %s", filename)
         exit(0)

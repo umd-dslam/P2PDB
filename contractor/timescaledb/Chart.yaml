@@ -1,5 +1,13 @@
-# This file and its contents are licensed under the Apache License 2.0.
-# Please see the included NOTICE for copyright information and LICENSE for a copy of the license.
+# Copyright 2019 DSLAM (http://dslam.cs.umd.edu/). All rights reserved.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 
 apiVersion: v1
 name: timescaledb-multinode
@@ -10,11 +18,9 @@ version: 0.3.0
 # https://github.com/helm/helm/blob/master/docs/charts.md#the-appversion-field
 # To avoid confusion, we will not expose appVersion
 # appVersion: 0.0.1
-home: https://github.com/timescale/timescaledb-kubernetes
+home: https://github.com/DSLAM-UMD/P2PDB/tree/develop/contractor/timescaledb
 sources:
-- https://github.com/timescale/timescaledb-kubernetes
-- https://github.com/timescale/timescaledb-docker-ha
-- https://github.com/zalando/patroni
+- https://github.com/DSLAM-UMD/P2PDB/tree/develop/contractor/timescaledb
 maintainers:
-- name: TimescaleDB
-  email: support@timescale.com
+- name: P2PDB
+  email: support@p2pdb.com
