@@ -14,7 +14,7 @@ begin discussion on the GitHub issues page. This is the best place to
 discuss your proposed improvement (and its implementation) with the core
 development team.
 
-Before we accept any code contributions, Timescale contributors need to
+Before we accept any code contributions, P2PDB contributors need to
 sign the [Contributor License Agreement](https://cla-assistant.io/DSLAM-UMD/P2PDB) (CLA). By signing a CLA, we can
 ensure that the community is free and confident in its ability to use your
 contributions.
