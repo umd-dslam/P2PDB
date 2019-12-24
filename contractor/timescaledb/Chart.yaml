@@ -1,0 +1,26 @@
+# Copyright 2019 DSLAM (http://dslam.cs.umd.edu/). All rights reserved.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+apiVersion: v1
+name: timescaledb-multinode
+description: 'TimescaleDB Multinode Deployment.'
+version: 0.3.0
+# appVersion specifies the version of the software, which can vary wildly,
+# e.g. TimescaleDB 1.4.1 on PostgreSQL 11 or TimescaleDB 1.5.0 on PostgreSQL 12.
+# https://github.com/helm/helm/blob/master/docs/charts.md#the-appversion-field
+# To avoid confusion, we will not expose appVersion
+# appVersion: 0.0.1
+home: https://github.com/DSLAM-UMD/P2PDB/tree/develop/contractor/timescaledb
+sources:
+- https://github.com/DSLAM-UMD/P2PDB/tree/develop/contractor/timescaledb
+maintainers:
+- name: P2PDB
+  email: support@p2pdb.com
