@@ -21,38 +21,27 @@ P2PDB consists of five core components: Client, Publisher, Coordinator, Contract
 - [Blockchain](/blockchain)
     - Maintain the configuration and bookkeeping info of the global state of system.
 
-## Contribution
-
-We strictly follow the below style guides for adding human and machine readable meaning to source code and commit messages.
-
-- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
-- [Google Style Guides](http://google.github.io/styleguide/)
-- [GitFlow](https://datasift.github.io/gitflow/IntroducingGitFlow.html)
-
-
-### Reach out in Gitter
-
-Within the Gitter, you can reach out to us via the [P2PDB](https://gitter.im/DSLAM-UMD) room in our DSLAM-UMD community.
-
-### Feedback
-
-Your feedback is our motivation to move on. Please let us know your questions, concerns, and issues by [filing Github Issues](https://github.com/DSLAM-UMD/P2PDB/issues).
-
-### Email
-
-Please contact us if you have some IoT data you can contribute our research prototype.
-
-`email: coming@soon`
-
-
-This email is accessible by P2PDB's executive team and board members.
 
 ## Publication
 
-[1] [AnyLog: a Grand Unification of the Internet of Things](http://www.cs.umd.edu/~abadi/papers/anylogAbadiEtAl.pdf). Daniel Abadi, Owen Arden, Faisal Nawab and Moshe Shadmon. CIDR'2020
+[1] [It's time to rethink how we share data on the Web](https://dbmsmusings.blogspot.com/2019/12/its-time-to-rethink-how-we-share-data.html). Daniel Abadi. In DBMS Musings. December 18, 2019.
 
-[2] [It's time to rethink how we share data on the Web](https://dbmsmusings.blogspot.com/2019/12/its-time-to-rethink-how-we-share-data.html). Daniel Abadi. In DBMS Musings. December 18, 2019.
+[2] [AnyLog: a Grand Unification of the Internet of Things](http://www.cs.umd.edu/~abadi/papers/anylogAbadiEtAl.pdf). Daniel Abadi, Owen Arden, Faisal Nawab and Moshe Shadmon. CIDR'2020
+
+
+## Get Help
+
+- [Gitter Channel](https://gitter.im/DSLAM-UMD)
+- [GitHub Issues](https://github.com/DSLAM-UMD/P2PDB/issues)
+
+
+## Contributing
+
+If you wish to make contributions to this project, please refer to [Contributor Instructions](CONTRIBUTING.md) for more information.
+
+If you have some IoT data you can contribute our research prototype, please contact us by `coming@soon`. This email is only accessible by P2PDB's executive team and board members.
+
 
 ## License
 
-[Apache License 2.0](https://github.com/DSLAM-UMD/P2PDB/blob/master/LICENSE)
+P2PDB resources in this repository are released under the [Apache License 2.0](https://github.com/DSLAM-UMD/P2PDB/blob/master/LICENSE)
