@@ -1,5 +1,5 @@
 # P2PDB
-> A peer-to-peer structured data sharing system
+> A peer-to-peer structured data trading system
 
 [![Build Status](https://travis-ci.org/DSLAM-UMD/P2PDB.svg?branch=develop)](https://travis-ci.org/DSLAM-UMD/P2PDB)
 [![Join the chat at https://gitter.im/DSLAM-UMD/P2PDB](https://badges.gitter.im/DSLAM-UMD/P2PDB.svg)](https://gitter.im/DSLAM-UMD/P2PDB?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
