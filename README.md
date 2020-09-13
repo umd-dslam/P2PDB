@@ -34,7 +34,7 @@ P2PDB consists of five core components: Client, Publisher, Coordinator, Contract
 
 If you wish to make contributions to this project, please refer to [Contributor Instructions](CONTRIBUTING.md) for more information.
 
-If you have some IoT data you can contribute our research prototype, please contact us by `gangliao@cs.umd.edu`. 
+If you have some IoT data you can contribute our research prototype, please contact us by `gangliao@cs.umd.edu`.
 
 
 ## License
