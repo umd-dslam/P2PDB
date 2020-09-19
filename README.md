@@ -1,3 +1,6 @@
+<img src="https://i.imgur.com/amJpPPE.jpg" width=15%>
+
+
 ## P2PDB: A Peer-to-Peer Structured Data Trading System
 
 [![Build Status](https://travis-ci.org/DSLAM-UMD/P2PDB.svg?branch=develop)](https://travis-ci.org/DSLAM-UMD/P2PDB)
